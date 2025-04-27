@@ -10,7 +10,7 @@ const Home = () => {
     { icon: '🧼', name: 'Aseo' },
     { icon: '📚', name: 'Escolares' },
     { icon: '🍔', name: 'Comida' },
-    { icon: '', name: 'Frutas' },
+    { icon: '🍎', name: 'Frutas' },
     { icon: '🔥', name: 'Promociones' }
   ];
 
