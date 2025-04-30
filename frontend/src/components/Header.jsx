@@ -28,7 +28,7 @@ const Header = () => {
             <Link to="/login" className="dropdown-item">Ingresar</Link>
             <Link to="/register" className="dropdown-item">Crear Cuenta</Link>
             <div className="dropdown-divider"></div>
-            <Link to="/admin" className="dropdown-item">Soy Administrador</Link>
+            <Link to="/Login" className="dropdown-item">Soy Administrador</Link>
           </div>
         )}
       </div>
