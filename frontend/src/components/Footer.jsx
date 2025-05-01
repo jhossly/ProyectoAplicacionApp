@@ -1,9 +1,9 @@
 import React from 'react';
-import './Footer.css'; // Asegúrate de que este archivo exista
+import './Footer.css'; 
 
 const Footer = () => {
   return (
-    <footer className="footer"> {/* Usa className en lugar de style */}
+    <footer className="footer">
       <p>&copy; 2025 Golosito 🛒 - Todos los derechos reservados</p>
     </footer>
   );

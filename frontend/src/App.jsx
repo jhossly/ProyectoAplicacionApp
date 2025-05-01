@@ -11,10 +11,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="app-container">
-        {/* Header (si lo tienes o lo agregas después) */}
+        {/* Header */}
         {/* <Header /> */}
 
-        {/* Área dinámica (cambia según la ruta) */}
+        {/* Área dinámica */}
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -23,7 +23,7 @@ const App = () => {
           </Routes>
         </main>
 
-        {/* Footer siempre visible */}
+        {/* Footer */}
         <Footer />
       </div>
     </BrowserRouter>
