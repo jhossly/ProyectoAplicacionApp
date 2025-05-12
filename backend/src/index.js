@@ -1,18 +1,9 @@
 
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-
 import app from './app.js';
-import userRouters from './routers/userRouter.js';
-
-
-
-
+import './db.js';
 dotenv.config();
-app.use('/api/usuarios', userRouters);
-
-
-
 
 
 const PORT = process.env.PORT || 5000;

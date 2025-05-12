@@ -5,7 +5,10 @@ import Home from './pages/Home';
 import Login from "./pages/Login";
 import Footer from './components/Footer';
 import Register from './pages/Register';
-import './App.css'; // Importa estilos generales
+//import CarruselOfertas from './components/CarruselOfertas';
+import Ventas from './pages/Ventas';
+import ProductCard from './components/ProductCard';
+import './App.css'; 
 
 const App = () => {
   return (
@@ -20,6 +23,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/ventas" element={<Ventas />} />
+            <Route path="/productCard" element ={<ProductCard/>}/>
           </Routes>
         </main>
 

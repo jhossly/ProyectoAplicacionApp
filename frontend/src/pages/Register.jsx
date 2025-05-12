@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 import './Register.css';
 
 const Register = () => {
@@ -20,7 +20,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const respuesta = await fetch('http://localhost:5000/api/usuarios/register', {
+      const respuesta = await fetch('http://localhost:5000/api/auth/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
