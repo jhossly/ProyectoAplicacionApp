@@ -8,7 +8,12 @@ import Register from './pages/Register';
 //import CarruselOfertas from './components/CarruselOfertas';
 import Ventas from './pages/Ventas';
 import ProductCard from './components/ProductCard';
+import AdminPanel from './pages/AdminPanel';
+import AdminInicio from './pages/AdminInicio';
+import Inventario from './pages/Inventario';
 import './App.css'; 
+
+
 
 const App = () => {
   return (
@@ -25,6 +30,9 @@ const App = () => {
             <Route path="/register" element={<Register />} />
             <Route path="/ventas" element={<Ventas />} />
             <Route path="/productCard" element ={<ProductCard/>}/>
+            <Route path='/adminPanel' element = {<AdminPanel/>}/>
+            <Route path="/adminInicio" element={<AdminInicio />} />
+            <Route path='/inventario' element={<Inventario/>}/>
           </Routes>
         </main>
 

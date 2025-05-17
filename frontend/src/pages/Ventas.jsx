@@ -3,10 +3,10 @@ import './Ventas.css';
 
 const Ventas = () => {
   const [venta, setVenta] = useState({
-    usuarioId: '', // Debes poner un ID válido de usuario
+    usuarioId: '', //  poner un ID válido de usuario
     productos: [
       {
-        productoId: '', // ID válido del producto
+        productoId: '', // ID válido 
         cantidad: 1,
         precioUnitario: 0
       }

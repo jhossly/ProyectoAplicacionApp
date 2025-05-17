@@ -1,16 +1,24 @@
+// src/controllers/productsController.js
 import Products from '../models/Products.js';
 
 export const crearProducto = async (req, res) => {
-  const { nombre, descripcion, precio, categoria, stock, fechaIngreso } = req.body;
+  console.log("Datos recibidos:", req.body);
+
+  const { nombre, descripcion, precio, categoria, stock, imagen, conIVA } = req.body;
+
+  // Calcular el precio con IVA si aplica
+  const precioFinal = conIVA ? (parseFloat(precio) * 1.15).toFixed(2) : parseFloat(precio);
 
   try {
     const nuevoProducto = new Products({
       nombre,
       descripcion,
-      precio,
+      precio: precioFinal,
       categoria,
       stock,
-      fechaIngreso
+      imagen,
+      conIVA,
+      fechaIngreso: new Date()
     });
 
     await nuevoProducto.save();
